@@ -1,0 +1,8 @@
+sample-id	input	filtered	percentage of input passed filter	denoised	merged	percentage of input merged	non-chimeric	percentage of input non-chimeric
+#q2:types	numeric	numeric	numeric	numeric	numeric	numeric	numeric	numeric
+aguamiel_1	112242	63014	56.14	62274	16567	14.76	15245	13.58
+aguamiel_2	147426	84904	57.59	84260	23791	16.14	22425	15.21
+contrapunta_1	119476	68442	57.29	67743	10811	9.05	10122	8.47
+contrapunta_2	108992	61794	56.7	61160	10544	9.67	9843	9.03
+pulque_1	104841	58988	56.26	58432	17377	16.57	16248	15.5
+pulque_2	106978	61340	57.34	60745	19327	18.07	18137	16.95

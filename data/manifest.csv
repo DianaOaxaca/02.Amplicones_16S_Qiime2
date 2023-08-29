@@ -1,0 +1,13 @@
+sample-id,absolute-filepath,direction
+aguamiel_1,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849602_1.fastq.gz,forward
+aguamiel_1,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849602_2.fastq.gz,reverse
+aguamiel_2,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849603_1.fastq.gz,forward
+aguamiel_2,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849603_2.fastq.gz,reverse
+pulque_1,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849604_1.fastq.gz,forward
+pulque_1,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849604_2.fastq.gz,reverse
+pulque_2,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849605_1.fastq.gz,forward
+pulque_2,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849605_2.fastq.gz,reverse
+contrapunta_1,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849606_1.fastq.gz,forward
+contrapunta_1,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849606_2.fastq.gz,reverse
+contrapunta_2,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849607_1.fastq.gz,forward
+contrapunta_2,/botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/SRR9849607_2.fastq.gz,reverse

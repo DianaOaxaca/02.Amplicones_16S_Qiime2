@@ -1,0 +1,12 @@
+aguamiel rep 2	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/003/SRR9849603/SRR9849603_1.fastq.gz
+	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/003/SRR9849603/SRR9849603_2.fastq.gz
+pulque rep 1	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/004/SRR9849604/SRR9849604_1.fastq.gz
+	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/004/SRR9849604/SRR9849604_2.fastq.gz
+contrapunta rep 1	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/006/SRR9849606/SRR9849606_1.fastq.gz
+	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/006/SRR9849606/SRR9849606_2.fastq.gz
+contrapunta rep 2	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/007/SRR9849607/SRR9849607_1.fastq.gz
+	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/007/SRR9849607/SRR9849607_2.fastq.gz
+aguamiel rep 1	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/002/SRR9849602/SRR9849602_1.fastq.gz
+	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/002/SRR9849602/SRR9849602_2.fastq.gz
+pulque rep 2	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/005/SRR9849605/SRR9849605_1.fastq.gz
+	ftp.sra.ebi.ac.uk/vol1/fastq/SRR984/005/SRR9849605/SRR9849605_2.fastq.gz
