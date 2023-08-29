@@ -90,6 +90,9 @@ ln -s /botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Q
 cp /botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/metadata.tsv data/
 # copiar los scripts
 cp /botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/src/* src/
+# Copiar la base de datos
+cp /botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/data/*.qza data/
+
 ```
 
 Ya que copiaste los archivos necesarios, lista el contenido de tus directorio `data` , veamos que contiene el archivo `metadata.tsv`
