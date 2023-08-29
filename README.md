@@ -8,7 +8,7 @@
 
 Recordemos el flujo de análisis que se pueden hacer dentro de este *pipeline*.
 
-<img src="/Users/diana/Documents/Hackeando Comunidades Microbianas/Practicas/02.Amplicones_Qiime2/qiime2_wf.jpg" style="zoom:67%;" />
+<img src="https://github.com/DianaOaxaca/02.Amplicones_16S_Qiime2/blob/main/qiime2_wf.jpg" style="zoom:67%;" />
 
 
 
