@@ -3,7 +3,7 @@
 
 #Trim adapters
 qiime cutadapt trim-paired --i-demultiplexed-sequences results/01.demux.qza\
- --p-front-f CCTACGGGNGGCWGCAG --p-front-r GACTACHVGGGTATCTAATCC\
+ --p-front-f CTCCTACGGGAGGCAGCAG --p-front-r CTTGTGCGGGCCCCCGTCAATTC\
  --o-trimmed-sequences results/02.demux_clean_adapter.qza
 
 #Get visualization file
