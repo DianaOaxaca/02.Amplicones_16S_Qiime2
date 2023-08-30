@@ -51,7 +51,7 @@ QIIME2 se puede correr en un ambiente **Conda**, las instrucciones de instalaci�
 - [ ] Entra al servidor
 
 ```bash
-ssh -X -Y USUARIO@132.248.15.30 -p 7915 -o ServerAliveInterval=60
+ssh -X -Y USUARIO@132.248.15.30 -p NÚMERO_PUERTO -o ServerAliveInterval=60
 ```
 
 - [ ] Dirígete al espacio en `/botete/` en el que siempre estarás trabajando
@@ -159,24 +159,33 @@ bash src/03.import_data.sh
    #bash src/06.get_denoising_info.sh
    ```
 
-   - [ ] Observa  los estadísticos de los resultados que obtuviste y compáralos con los de las versiones v1-v3
+   - [ ] O puedes obtener los estadísticos de la versión 4 que creaste con la siguiente línea
+
+   ```bash
+   qiime tools export --input-path results/03.denoising-stats_v4.qza --output-path results/03.denoising-stats_v4
+   ```
+
+   - [ ] Observa  los estadísticos de los resultados que obtuviste y compáralos con los de las versiones v1-v3, para ello, copia los resultados de las versiones 1 a 3 y de la nueva versión 4 que ya hiciste, a un nuevo directorio de estadísticos de las versiones de denoising.
 
    ```bash
    mkdir -p results/stats_versions
    cp /botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/results/03.denoising-stats_v*/*stats_v* results/stats_versions/
+   cp results/03.denoising-stats_v4/stats.tsv results/03.denoising-stats_v4/stats_v4.tsv
    ```
+
+   - [ ] Vamos a compararlos
 
    ```bash
-   less -S results/03.denoising-stats_v4/stats.tsv
+   cat results/stats_versions/*.tsv
    ```
 
-   Antes de cocnocer el resultado que obtuviste, al comparar las tres versiones, seleccionamos la v3 por ser con la que se recuperó un mayor número de ASVs. Así que en adelante trabajremos con esta versión.
+   Antes de conocer el resultado que obtuviste, al comparar las tres versiones, seleccionamos la v3 por ser con la que se recuperó un mayor número de ASVs. Así que en adelante trabajaremos con esta versión.
 
    
 
 4. **Asignación taxonómica**
 
-   Utilizaremos sklearn para realizar la asignación taxonómica, por lo tanto utilizaremos una base de datos preentrenada. La puedes encontrar [aquí](https://docs.qiime2.org/2022.11/data-resources/).
+   Utilizaremos `sklearn` para realizar la asignación taxonómica, por lo tanto utilizaremos una base de datos preentrenada. La puedes encontrar [aquí](https://docs.qiime2.org/2022.11/data-resources/).
 
    Recuerda que puedes modificar el script con la versión que obtuviste o cambiando algún parámetro.
 
