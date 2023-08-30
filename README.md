@@ -209,5 +209,7 @@ git push -u origin main
 
 #### Referencias
 
+Bolyen, E., Rideout, J.R., Dillon, M.R. et al. Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2. Nat Biotechnol 37, 852–857 (2019). https://doi.org/10.1038/s41587-019-0209-9
+
 Rocha-Arriaga, C., Espinal-Centeno, A., Martinez-Sanchez, S., Caballero-Pérez, J., Alcaraz, L. D., & Cruz-Ramírez, A. (2020). Deep microbial community profiling along the fermentation process of pulque, a biocultural resource of Mexico. *Microbiological Research*, *241*, 126593
 
