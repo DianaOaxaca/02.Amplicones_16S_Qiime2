@@ -2,7 +2,7 @@
 
 
 
-**Qiime2** (Quantitative Insights Into Microbial Ecology) es un *pipeline* desarrollado para el análisis de metataxonomía ([Bolyen et al., 2019](https://www.nature.com/articles/s41587-019-0209-9)). Contiene herramientas para limpiar secuencias, agrupar, asignar taxnomía, reconstruir filogenias, inferir métricas de diversidad, abundancia diferencial, etc. Es de código abierto, posee una [interfaz gráfica](https://view.qiime2.org/) amigable, [mucha documentación](https://docs.qiime2.org/2022.11/plugins/available/diversity/), [tutoriales](https://docs.qiime2.org/2023.7/tutorials/) y [foros de ayuda](https://forum.qiime2.org/).
+**Qiime2** (Quantitative Insights Into Microbial Ecology) es un *pipeline* desarrollado para el análisis de metataxonomía ([Bolyen et al., 2019](https://www.nature.com/articles/s41587-019-0209-9)). Contiene herramientas para limpiar secuencias, agrupar, asignar taxonomía, reconstruir filogenias, inferir métricas de diversidad, abundancia diferencial, etc. Es de código abierto, posee una [interfaz gráfica](https://view.qiime2.org/) amigable, [mucha documentación](https://docs.qiime2.org/2022.11/plugins/available/diversity/), [tutoriales](https://docs.qiime2.org/2023.7/tutorials/) y [foros de ayuda](https://forum.qiime2.org/).
 
 
 
@@ -30,7 +30,7 @@ CCCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGDGGFGGGGGGGGGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGFGGG
 - L1 Comienza con '@' seguido del identificador de la secuencia y una descripción opcional
 - L2 La secuencia de nucleótidos
 - L3 Comienza con un '+' opcionalmente incluye el identificador de la secuencia
-- L4 Indica los valores de calidad de la secuencia, debe contener el mismo número de símbolos que el número de nucleótidos. (Actualmente se usa phred+33, puedes ver explicaciones más detalladas [aquí](https://people.duke.edu/~ccc14/duke-hts-2018/bioinformatics/quality_scores.html)). 
+- L4 Indica los valores de calidad de la secuencia, debe contener el mismo número de símbolos que el número de nucleótidos. (Actualmente se usa phred+33, puedes ver explicaciones más detalladas [aquí](https://en.wikipedia.org/wiki/Phred_quality_score). 
 
 
 
@@ -38,13 +38,13 @@ CCCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGDGGFGGGGGGGGGGGGGGGGGGGGGGGGGGGGFGGGGGGGGGFGGG
 
 > **NOTA**: Cada programa tiene una ayuda y un manual de usuario, es **importante** revisarlo y conocer cada parámetro que se ejecute. En terminal se puede consultar el manual con el comando `man` y también se puede consultar la ayuda con `-h` o `--help`, por ejemplo `qiime tools import --help`.
 >
-> La presente práctica sólo es una representación del flujo de trabajo para el análisis de amplicones, sin embargo, no sustituye los manuales de cada programa y el flujo puede variar dependiendo del tipo de datos y pregunta de investigación. Una explicació mucho más detallada de cada paso se encuentra en el *[overview](https://docs.qiime2.org/2023.7/tutorials/overview/)*  y en el *[moving-pictures](https://docs.qiime2.org/2023.7/tutorials/moving-pictures/)* de QIIME2.
+> La presente práctica sólo es una representación del flujo de trabajo para el análisis de amplicones, sin embargo, no sustituye a los manuales de cada programa y el flujo puede variar dependiendo del tipo de datos y pregunta de investigación. Una explicación mucho más detallada de cada paso se encuentra en el *[overview](https://docs.qiime2.org/2023.7/tutorials/overview/)*  y en el *[moving-pictures](https://docs.qiime2.org/2023.7/tutorials/moving-pictures/)* de QIIME2.
 
 
 
 ### Manos a la obra
 
-Qiime2 se puede correr en un ambiente **Conda**, las instrucciones de instalación para cada sistema operativo las puedes encontrar [aquí.](https://docs.qiime2.org/2023.7/install/native/#install-qiime-2-within-a-conda-environment)
+QIIME2 se puede correr en un ambiente **Conda**, las instrucciones de instalación para cada sistema operativo las puedes encontrar [aquí.](https://docs.qiime2.org/2023.7/install/native/#install-qiime-2-within-a-conda-environment)
 
 
 
