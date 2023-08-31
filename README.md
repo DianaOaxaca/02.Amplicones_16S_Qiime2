@@ -151,7 +151,14 @@ bash src/03.import_data.sh
    - [ ] Ahora si removamos los adaptadores, puedes modificar, agregar parámetros al script para mejorar.
 
    ```bash
-   bash src/04.clean_adapter.sh
+#Trim adapters
+qiime cutadapt trim-paired --i-demultiplexed-sequences results/01.demux.qza\
+ --p-front-f CTCCTACGGGAGGCAGCAG --p-front-r CTTGTGCGGGCCCCCGTCAATTC\
+ --o-trimmed-sequences results/02.demux_clean_adapter.qza
+
+#Get visualization file
+qiime demux summarize --i-data results/02.demux_clean_adapter.qza --o-visualization results/0>
+
    ```
 
    Observemos el archivo `02.demux_clean_adapter.qzv` , ¿qué ocurrió con la calidad?
@@ -195,16 +202,10 @@ bash src/03.import_data.sh
 
    - [ ] Observa  los estadísticos de los resultados que obtuviste y compáralos con los de las versiones v1-v3, para ello, copia los resultados de las versiones 1 a 3 y de la nueva versión 4 que ya hiciste, a un nuevo directorio de estadísticos de las versiones de denoising.
 
-   ```bash
-   mkdir -p results/stats_versions
-   cp /botete/diana/Hackeando_las_comunidades_microbianas_v1/02.Amplicones_16S_Qiime2/results/03.denoising-stats_v*/*stats_v* results/stats_versions/
-   cp results/03.denoising-stats_v4/stats.tsv results/03.denoising-stats_v4/stats_v4.tsv
-   ```
-
    - [ ] Vamos a compararlos
 
    ```bash
-   head results/stats_versions/*.tsv
+  head results/03.denoising-stats_v*/stats.tsv
    ```
 
    Antes de conocer el resultado que obtuviste, al comparar las tres versiones, seleccionamos la v3 por ser con la que se recuperó un mayor número de ASVs. Así que en adelante trabajaremos con esta versión.
@@ -216,12 +217,35 @@ bash src/03.import_data.sh
    Utilizaremos `sklearn` para realizar la asignación taxonómica, por lo tanto utilizaremos una base de datos preentrenada. La puedes encontrar [aquí](https://docs.qiime2.org/2022.11/data-resources/).
 
    Recuerda que puedes modificar el script con la versión que obtuviste o cambiando algún parámetro.
+   Prueba haciendo la asignación taxonómica con blast o vsearch. Consulta la ayuda para que veas como modificar el comando en este caso.
 
    ```bash
-   bash src/07.tax_assign.sh
+   echo "Get classification with sklearn"
+
+qiime feature-classifier classify-sklearn --i-classifier data/silva-138-99-nb-classifier.qza \
+--i-reads results/03.rep-seqs_v3.qza  --o-classification results/04.taxonomy_sklearn_assign.qza
+
+
+echo "Get visual artefact"
+
+qiime metadata tabulate --m-input-file results/04.taxonomy_sklearn_assign.qza --o-visualization results/04.taxonomy_sklearn_assign.qzv
+
+
+echo "Get barplot"
+
+qiime taxa barplot --i-table results/03.feature-table_v3.qza  --i-taxonomy results/04.taxonomy_sklearn_assign.qza \
+ --m-metadata-file data/metadata.tsv --o-visualization results/04.taxonomy_sklearn_barplot.qzv
    ```
 
-   
+### Obtener tablas para analisis posteriores
+
+Observa lo que contienen los scripts `src/08.filter_and_export_table.sh` y `09.phylogeny.sh`, puedes ejecutarlos para obtener tablas y secuencias filtradas de cloroplastos, puedes obtener una filogenia y los archivos necesarios para importarlos a R u otros programas para que proceses tus datos.
+
+Recuerda que en los foros de QIIME también encontrarás formas de hacer análisis de diversidad, abunadancia diferencial, entre otras cosas dentro QIIME2.
+
+Suerte!!!
+
+
 
 ### Git
 
