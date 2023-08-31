@@ -66,7 +66,7 @@ ssh -X -Y USUARIO@132.248.15.30 -p NÚMERO_PUERTO -o ServerAliveInterval=60
 cd /botete/USUARIO
 ```
 
-- [ ] Inicia conda
+- [ ] Inicia conda. **NOTA:** Iniciar conda sólo se hace una vez.
 
 ```bash
 /opt/anaconda3/bin/conda init bash
