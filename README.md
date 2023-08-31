@@ -165,6 +165,13 @@ bash src/03.import_data.sh
    ```
 
    Como habrás notado, es necesario tomar decisiones basadas en la calidad de nuestras lecturas para definir los valores de truncado.
+   Es muy importante dener en cuenta la longitud de las lecturas y del amplicón deseado para tener una idea de la longitud del sobrelape que se obtendría. 
+
+   
+$$
+(longitud lectura Fordware) + (longitud lectura Reverse) − (longitud del amplicon) − (longitud lectura Fordware − --p-trunc-len-f value) − (longitud lectura Reverse − --p-trunc-len-r value) = sobrelape
+$$
+
 
    - [ ] Edita el script `src/05.denoising.sh` y modifica los valores de truncado del *denoising* y/o los que consideres que pueden mejorar los resultados.
 
