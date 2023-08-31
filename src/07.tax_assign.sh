@@ -5,7 +5,7 @@
 
 echo "Get classification with sklearn"
 
-qiime feature-classifier classify-sklearn --i-classifier data/silva-138-99-515-806-nb-classifier.qza \
+qiime feature-classifier classify-sklearn --i-classifier data/silva-138-99-nb-classifier.qza \
 --i-reads results/03.rep-seqs_v3.qza  --o-classification results/04.taxonomy_sklearn_assign.qza
 
 

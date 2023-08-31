@@ -1,0 +1,63 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: data/SRR9849603_1.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; user defined)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Removing Ns from the start and end of reads
+Running FastQC on the data once trimming has completed
+Output file will be GZIP compressed
+
+
+This is cutadapt 4.2 with Python 3.8.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 --trim-n -a AGATCGGAAGAGC data/SRR9849603_1.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 3.048 s (20.672 µs/read; 2.90 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                 147,426
+Reads with adapters:                    51,210 (34.7%)
+Reads written (passing filters):       147,426 (100.0%)
+
+Total basepairs processed:    41,713,680 bp
+Quality-trimmed:               1,071,291 bp (2.6%)
+Total written (filtered):     40,556,388 bp (97.2%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 51210 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 65.2%
+  C: 2.7%
+  G: 6.2%
+  T: 25.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	18271	36856.5	0	18271
+2	31132	9214.1	0	31132
+3	1786	2303.5	0	1786
+4	16	575.9	0	16
+7	1	9.0	0	1
+9	3	0.6	0	0 3
+10	1	0.1	1	0 1
+
+RUN STATISTICS FOR INPUT FILE: data/SRR9849603_1.fastq.gz
+=============================================
+147426 sequences processed in total
+

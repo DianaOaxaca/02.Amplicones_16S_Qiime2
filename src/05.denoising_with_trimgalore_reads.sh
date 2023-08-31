@@ -5,7 +5,7 @@
 
 echo "Run denoising version 1 281|277"
 qiime dada2 denoise-paired --i-demultiplexed-seqs results/02.demux_clean_adapter.qza\
- --p-trunc-len-f 281 --p-trunc-len-r 277\
+ --p-trunc-len-f 280 --p-trunc-len-r 218\
  --o-representative-sequences results/03.rep-seqs_v1.qza --o-table results/03.feature-table_v1.qza\
  --o-denoising-stats results/03.denoising-stats_v1.qza --p-n-threads 32
 

@@ -1,0 +1,65 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: data/SRR9849605_2.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; user defined)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Removing Ns from the start and end of reads
+Running FastQC on the data once trimming has completed
+Output file will be GZIP compressed
+
+
+This is cutadapt 4.2 with Python 3.8.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 --trim-n -a AGATCGGAAGAGC data/SRR9849605_2.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 2.559 s (23.922 µs/read; 2.51 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                 106,978
+Reads with adapters:                    15,453 (14.4%)
+Reads written (passing filters):       106,978 (100.0%)
+
+Total basepairs processed:    30,396,399 bp
+Quality-trimmed:               4,589,672 bp (15.1%)
+Total written (filtered):     25,787,394 bp (84.8%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 15453 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 17.5%
+  C: 48.7%
+  G: 8.4%
+  T: 25.0%
+  none/other: 0.3%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	12022	26744.5	0	12022
+2	3023	6686.1	0	3023
+3	386	1671.5	0	386
+4	15	417.9	0	15
+5	6	104.5	0	6
+17	1	0.0	1	1
+
+RUN STATISTICS FOR INPUT FILE: data/SRR9849605_2.fastq.gz
+=============================================
+106978 sequences processed in total
+
+Total number of sequences analysed for the sequence pair length validation: 106978
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 8472 (7.92%)

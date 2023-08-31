@@ -1,0 +1,13 @@
+sample-id,absolute-filepath,direction
+aguamiel_1,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849602_1_val_1.fq.gz,forward
+aguamiel_1,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849602_2_val_2.fq.gz,reverse
+aguamiel_2,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849603_1_val_1.fq.gz,forward
+aguamiel_2,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849603_2_val_2.fq.gz,reverse
+pulque_1,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849604_1_val_1.fq.gz,forward
+pulque_1,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849604_2_val_2.fq.gz,reverse
+pulque_2,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849605_1_val_1.fq.gz,forward
+pulque_2,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849605_2_val_2.fq.gz,reverse
+contrapunta_1,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849606_1_val_1.fq.gz,forward
+contrapunta_1,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849606_2_val_2.fq.gz,reverse
+contrapunta_2,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849607_1_val_1.fq.gz,forward
+contrapunta_2,/botete/diana/02.Amplicones_16S_Qiime2/data/SRR9849607_2_val_2.fq.gz,reverse

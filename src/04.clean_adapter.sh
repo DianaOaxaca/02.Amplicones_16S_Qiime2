@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-#DianaOaxaca 230823
+#DianaOaxaca 300823
 
 #Trim adapters
 qiime cutadapt trim-paired --i-demultiplexed-sequences results/01.demux.qza\
