@@ -195,7 +195,7 @@ bash src/03.import_data.sh
    - [ ] Vamos a compararlos
 
    ```bash
-   cat results/stats_versions/*.tsv
+   head results/stats_versions/*.tsv
    ```
 
    Antes de conocer el resultado que obtuviste, al comparar las tres versiones, seleccionamos la v3 por ser con la que se recuperó un mayor número de ASVs. Así que en adelante trabajaremos con esta versión.
