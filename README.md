@@ -169,7 +169,9 @@ bash src/03.import_data.sh
 
    
 $$
-(longitud lectura Fordware) + (longitud lectura Reverse) − (longitud del amplicon) − (longitud lectura Fordware − --p-trunc-len-f value) − (longitud lectura Reverse − --p-trunc-len-r value) = sobrelape
+(longitud lectura Fordware) + (longitud lectura Reverse) − (longitud del amplicon) − 
+(longitud lectura Fordware − --p-trunc-len-f value) − (longitud lectura Reverse − --p-trunc-len-r value) 
+= sobrelape
 $$
 
 
